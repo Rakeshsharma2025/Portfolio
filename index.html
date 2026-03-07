@@ -48,7 +48,7 @@
             <div class="bento-card profile-card" id="about">
                 <div class="profile-header">
                     <div class="avatar-container">
-                        <img src="Photo.png" alt="Rakeshsharma - Avatar" class="avatar-img" style="object-fit: cover;">
+                        <img src="photo.png" alt="Rakeshsharma - Avatar" class="avatar-img" style="object-fit: cover;">
                         <div class="tooltip-bubble">Turning ideas into reality ✨</div>
                     </div>
                 </div>
@@ -334,8 +334,9 @@
                             <!-- Disability Captcha for cleaner UX -->
                             <input type="hidden" name="_captcha" value="false">
 
-                            <!-- Removing Custom Redirect until deployed to a known URL to prevent 404s -->
-                            <!-- <input type="hidden" name="_next" value="https://rakeshsharma2025.github.io/Potfolio/success.html"> -->
+                            <!-- Custom Redirect after form submission -->
+                            <input type="hidden" name="_next"
+                                value="https://rakeshsharma2025.github.io/Portfolio/success.html">
 
                             <div class="input-group">
                                 <input type="text" name="name" placeholder="John Doe" required>
@@ -374,6 +375,5 @@
         });
     </script>
 </body>
-
 
 </html>
