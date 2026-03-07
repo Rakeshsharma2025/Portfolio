@@ -934,8 +934,32 @@ a {
 }
 
 @media(max-width: 768px) {
-  .nav-links {
+  .bento-nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 0.8rem 1rem;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .bento-nav::-webkit-scrollbar {
     display: none;
+    /* Chrome, Safari and Opera */
+  }
+
+  .nav-logo,
+  .nav-links,
+  .bento-nav .btn {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
   }
 
   .services-inner-grid {
